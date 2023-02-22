@@ -1,4 +1,22 @@
-		<header>
-		<h1>hola soy el nav</h1>
-		</header>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/proyectoalqueria/view/css/nav.css">
+	<title>Bienvenido al portal</title>
+</head>
+<body>
+	<nav>
+		<ul class="imagecontainer">
+			<li><img class="logo" src="/proyectoalqueria/view/img/logo.webp" alt="" srcset=""></li>
+		</ul>
+		<ul class="linkscontainer">
+			<li><a class="link" href="#">Inicio</a></li>
+			<li><a class="link" href="#">Iniciar sesion</a></li>
+			<li><a class="link" href="#">Acerca de</a></li>
+		</ul>
+	</nav>
+</body>
+</html>
