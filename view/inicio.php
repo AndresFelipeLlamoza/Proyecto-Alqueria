@@ -8,23 +8,25 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="imagecontainer">
-        <img src="" alt="">
-    </div>
-    </div>
     <div class="logincontainer">
-        <form action="post" class="loginform">
-            <p>Nombre de usuario</p>
-            <input type="text" name="usuario" id="">
+        <div>
+            <a href="#"><img class="loginimage" src="/proyectoalqueria/view/img/formimage.jpg" alt="" srcset="" href="#"></a>
+        </div>
+           <form action="post" class="loginform">
+            <center><img class="iconsign" src="/proyectoalqueria/view/img/logo.webp" alt="" srcset=""></center>
+           <p>Nombre de usuario</p>
+           <input class="usrinput" type="text" size="35px"name="usuario" id="">
             <br>
             <p>Contraseña</p>
-            <input type="password" name="contraseña" id="">
+            <input class="usrinput" type="password" size="35px" name="contraseña" id="">
             <br>
             <input type="checkbox" name="recordar" id="">
-            <label for="checkbox">Recordar contraseña ?</label>
+            <label for="checkbox">Recordar contraseña</label>
             <br>
             <br>
-            <center><button type="submit">Ingresar</button></center>
+            <p style="text-align: center;">¿Olvido la contraseña? Haga click <span><a href="#">aqui</a></span></p>
+            <center><button class="buttonsign" type="submit">Ingresar</button></center>
+                
         </form>
     </div>
 </body>
