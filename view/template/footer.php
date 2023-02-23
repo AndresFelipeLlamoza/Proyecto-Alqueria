@@ -10,10 +10,8 @@
 <body>
     <footer>
         <ul class="footeritems">
-            <li>
-                Contacto:<br>Numero: 3003030303<br>Nit: 80012015</li>
             <li><p>Sitio web oficial: <span><a href="https://alqueria.com.co/" target="_blank">Familia alqueria</a></span></p></li>
-            <li><p>&copy;Regional Occidente</p> </li>
+            <li>&copy;Regional Occidente<br>Todos los derechos reservados</li>
         </ul>
     </footer>
 </body>

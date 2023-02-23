@@ -1,6 +1,6 @@
-.title{
-    display: flex;
+.loginform{
+    background-color: antiquewhite;
+    width: 500px;
+    padding: 25px;
     justify-content: center;
-    padding: 50px;
-    top: 50%;
 }

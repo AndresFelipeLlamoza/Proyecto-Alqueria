@@ -8,8 +8,24 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="title">
-        <h2>sample content</h2>
+    <div class="imagecontainer">
+        <img src="" alt="">
+    </div>
+    </div>
+    <div class="logincontainer">
+        <form action="post" class="loginform">
+            <p>Nombre de usuario</p>
+            <input type="text" name="usuario" id="">
+            <br>
+            <p>Contraseña</p>
+            <input type="password" name="contraseña" id="">
+            <br>
+            <input type="checkbox" name="recordar" id="">
+            <label for="checkbox">Recordar contraseña ?</label>
+            <br>
+            <br>
+            <button type="submit">Ingresar</button>
+        </form>
     </div>
 </body>
 </html>
