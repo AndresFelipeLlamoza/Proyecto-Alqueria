@@ -24,7 +24,7 @@
             <label for="checkbox">Recordar contraseña ?</label>
             <br>
             <br>
-            <button type="submit">Ingresar</button>
+            <center><button type="submit">Ingresar</button></center>
         </form>
     </div>
 </body>

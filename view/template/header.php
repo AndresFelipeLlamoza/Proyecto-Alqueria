@@ -8,7 +8,7 @@
 	<title>Bienvenido al portal</title>
 </head>
 <body>
-	<nav>
+	<div class="navbar">
 		<ul class="imagecontainer">
 			<li><img class="logo" src="/proyectoalqueria/view/img/logo.webp" alt="" srcset=""></li>
 		</ul>
@@ -17,6 +17,6 @@
 			<li><a class="link" href="#">Iniciar sesion</a></li>
 			<li><a class="link" href="#">Acerca de</a></li>
 		</ul>
-	</nav>
+	</div>
 </body>
 </html>
