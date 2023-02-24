@@ -5,10 +5,9 @@
 
 .navbar{
     background-color: rgb(236,27,44);
-    padding: 5px;
     display: flex;
+    padding: 5px;
     justify-content: space-between;
-
 }
 
 .imagecontainer{
@@ -29,15 +28,18 @@
     color: white;
     padding: 10px;
     border-radius: 10px;
+    transition: all ease .4s;
 }
 
 .link:hover{
     background-color: white;
     color: red;
-    transition: all ease .4s;
     border: 1px solid;
 }
 
+
+
 .logo{
     width: 150px;
+    padding: 0
 }

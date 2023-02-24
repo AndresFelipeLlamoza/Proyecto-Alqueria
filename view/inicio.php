@@ -10,7 +10,7 @@
 <body>
     <div class="logincontainer">
         <div>
-            <a href="#"><img class="loginimage" src="/proyectoalqueria/view/img/formimage.jpg" alt="" srcset="" href="#"></a>
+            <img class="loginimage" src="/proyectoalqueria/view/img/formimage.jpg" alt="" srcset="" href="#">
         </div>
            <form action="post" class="loginform">
             <center><img class="iconsign" src="/proyectoalqueria/view/img/logo.webp" alt="" srcset=""></center>

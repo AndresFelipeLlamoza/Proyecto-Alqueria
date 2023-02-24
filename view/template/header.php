@@ -10,7 +10,7 @@
 <body>
 	<div class="navbar">
 		<ul class="imagecontainer">
-			<li><img class="logo" src="/proyectoalqueria/view/img/logo.webp" alt="" srcset=""></li>
+			<li><a href="#"><img class="logo" src="/proyectoalqueria/view/img/logo.webp" alt="" srcset=""></a></li>
 		</ul>
 		<ul class="linkscontainer">
 			<li><a class="link" href="#">Inicio</a></li>
