@@ -3,7 +3,7 @@ body{
 }
 .sidebar{
     height: 100%;
-    width: 30vh;
+    width: 27vh;
     background-color: rgb(236,27,44);
     display: flex;
     flex-direction: column;

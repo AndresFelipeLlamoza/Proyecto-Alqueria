@@ -1,7 +1,7 @@
 .loginform{
     background-color: rgba(255, 255, 255, 0.801);
     width: 35vh;
-    height: 45vh;
+    height: 50vh;
     padding: 45px;
     text-align: justify;
     border-radius: 0px 25px 25px 0px;
@@ -63,8 +63,14 @@ body{
     transform: scale(1.1);
 }
 
-@media screen and(max-width:1074px) {
-    form.loginform{
-        width: 100%;
+@media screen and (max-width:1000px){
+    .loginimage{
+    }
+    .loginform{
+        border-radius: 25px ;
+    }
+    .logincontainer{
+        display: flex;
+        flex-direction: column;
     }
 }
