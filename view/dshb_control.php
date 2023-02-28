@@ -1,10 +1,10 @@
 <?php 
     date_default_timezone_set("America/Bogota");
     include ("../view/template/sidebar.php");
-    session_start();
-    if (isset($_SESSION["usuario"])){
-        echo "ok";
-    }
+    // session_start();
+    // if (isset($_SESSION["usuario"])){
+    //     echo "ok";
+    // }
 ?>
 
 <!DOCTYPE html>

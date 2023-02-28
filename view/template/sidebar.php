@@ -16,15 +16,15 @@ session_start();
     <div>
         <ul class="sideitems">
             <li><center><img class="sideimg" src="./img/logo.webp" alt=""></center></li>
-            <li class="link"><a href="#">Contratistas <i class='bx bx-group bx-sm'></i></a></li>
-            <li class="link"><a href="#">Control Documental <i class='bx bx-paperclip bx-sm'></i></a></li>
-            <li class="link"><a href="#">Entrega de dotacion <i class='bx bxs-t-shirt bx-sm'></i></a></li>
-            <li class="link"><a href="#">Graficas <i class='bx bx-stats bx-sm'></i></a></li>
+            <li class="link"><a href="#"><i class='bx bx-group bx-sm'></i>  Contratistas</a></li>
+            <li class="link"><a href="#"><i class='bx bx-paperclip bx-sm'></i>  Control Documental</a></li>
+            <li class="link"><a href="#"><i class='bx bxs-t-shirt bx-sm'></i>  Entrega de dotacion</a></li>
+            <li class="link"><a href="#"><i class='bx bx-stats bx-sm'></i>  Graficas</a></li>
         </ul>
     </div>
     <div>
         <ul class="sideitems">
-            <li class="link"><a href="#">Bienvenido: <?php echo $_SESSION["usuario"]?></a></li>
+            <li class="link"><a href="#">Bienvenido: <?php echo $_SESSION["usuario"]?> <i class='bx bx-user bx-sm'></i></a></li>
             <li class="link"><a href="#">Informacion de la cuenta</a></li>
             <li class="link"><a href="/proyectoalqueria/model/closesion.php">Cerrar Sesion</a></li>
         </ul>
