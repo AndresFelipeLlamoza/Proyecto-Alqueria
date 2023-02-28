@@ -63,8 +63,8 @@ body{
     transform: scale(1.1);
 }
 
-@media screen and(max-width:1030px) {
-    .loginform{
-        
+@media screen and(max-width:1074px) {
+    form.loginform{
+        width: 100%;
     }
 }
