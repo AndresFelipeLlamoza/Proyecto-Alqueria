@@ -63,14 +63,17 @@ body{
     transform: scale(1.1);
 }
 
-@media screen and (max-width:1000px){
+
+
+@media screen and (max-width:960px){
     .loginimage{
+        display: none;
     }
     .loginform{
         border-radius: 25px ;
     }
     .logincontainer{
         display: flex;
-        flex-direction: column;
+        justify-content: center;
     }
 }

@@ -16,8 +16,8 @@ session_start();
     <div>
         <ul class="sideitems">
             <li><center><img class="sideimg" src="./img/logo.webp" alt=""></center></li>
-            <li class="link"><a href="#"><i class='bx bx-group bx-sm'></i>  Contratistas</a></li>
-            <li class="link"><a href="#"><i class='bx bx-paperclip bx-sm'></i>  Control Documental</a></li>
+            <li class="link"><a href="/proyectoalqueria/view/contratists.php"><i class='bx bx-group bx-sm'></i>  Contratistas</a></li>
+            <li class="link"><a href="/proyectoalqueria/view/dshb_control.php"><i class='bx bx-paperclip bx-sm'></i>  Control Documental</a></li>
             <li class="link"><a href="#"><i class='bx bxs-t-shirt bx-sm'></i>  Entrega de dotacion</a></li>
             <li class="link"><a href="#"><i class='bx bx-stats bx-sm'></i>  Graficas</a></li>
         </ul>

@@ -10,16 +10,23 @@
     justify-content: space-between;
 }
 
+
+.desplegar{
+    padding: 30px;
+    display: block;
+}
+
 .imagecontainer{
     list-style-type: none
 }
 
-.linkscontainer{
+#linkscontainer{
     display: flex;
     gap: 40px;
     list-style-type: none;
     text-decoration: none;
     padding: 20px;
+    /* display:none  */
 }
 
 .link{
@@ -36,8 +43,6 @@
     color: red;
     border: 1px solid;
 }
-
-
 
 .logo{
     width: 150px;

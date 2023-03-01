@@ -8,6 +8,10 @@ body{
     display: flex;
     flex-direction: column;
     gap: 25vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
 
 .sideimg{
