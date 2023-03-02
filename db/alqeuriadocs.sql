@@ -19,14 +19,23 @@ USE `alqueriadocs`;
 CREATE TABLE IF NOT EXISTS `contratistas` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `Nombre` varchar(500) DEFAULT NULL,
-  `Celular` int(11) DEFAULT NULL,
-  `Correo` varchar(500) DEFAULT NULL,
+  `Celular` bigint(20) DEFAULT NULL,
+  `Cedula` bigint(20) DEFAULT NULL,
   `Ruta` varchar(500) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
--- Volcando datos para la tabla alqueriadocs.contratistas: 0 rows
+-- Volcando datos para la tabla alqueriadocs.contratistas: 8 rows
 /*!40000 ALTER TABLE `contratistas` DISABLE KEYS */;
+INSERT INTO `contratistas` (`id`, `Nombre`, `Celular`, `Cedula`, `Ruta`) VALUES
+	(1, 'Carlos Julio Jimenez Gutierrez', 3182617804, 16365713, 'TULUA AU'),
+	(2, 'Katherin Johana Pasichana', 3114344792, 1114827490, 'CROSS JAM'),
+	(3, 'Nicolas Rodriguez Ortiz', 3234496668, 1143872251, 'STANDBY'),
+	(4, 'Diego Fernado Ospina Garcia', 3006849653, 1113656383, 'NORTEVAL'),
+	(5, 'Elizabeth Cortes Londoño', 3182617804, 25173447, 'P0100'),
+	(6, 'Jhon Anderson Riascos Marmolejo', 3183606307, 14678147, 'P0101'),
+	(7, 'Leonardo Lopez Vargas', 3174524042, 12239000, 'P0102'),
+	(8, 'Liliana Mayorquin Guzman', 3183802220, 31167781, 'P0104');
 /*!40000 ALTER TABLE `contratistas` ENABLE KEYS */;
 
 -- Volcando estructura para tabla alqueriadocs.especialistas
