@@ -14,20 +14,22 @@
     <div class="navcontainer">
         <h1>Agregar un nuevo contratista</h1>
     </div>
-    <form class="formcontainer" action="/proyectoalqueria/model/newcontrat.php" method="post">
-        <div class="form-group">
-            <p>Nombre</p>
-            <input class="forminput" type="text" name="name" id="name" class="form-control" placeholder="Nombre completo del contratista">
-            <p>Celular</p>
-            <input class="forminput" type="email" name="email" id="email" class="form-control" placeholder="Numero celular">
-        </div>
-        <div class="form-group">
-            <p>Numero de cedula</p>
-            <input class="forminput" type="text" name="address" id="address" class="form-control" placeholder="Cedula">
-            <p>Ruta</p>
-            <input class="forminput" type="text" name="ruta" id="" placeholder="ruta que manejara el contratista">
-        </div>
-    </form>
-    
+    <div class="formbody">
+        <form class="formcontainer" action="/proyectoalqueria/model/newcontrat.php" method="post">
+            <div class="form-group">
+                <p>Nombre</p>
+                <input class="forminput" type="text" name="nombre" id="name" class="form-control" placeholder="Nombre completo">
+                <p>Celular</p>
+                <input class="forminput" type="number" name="celular" id="celular" class="form-control" placeholder="Numero celular">
+            </div>
+            <div class="form-group">
+                <p>Numero de cedula</p>
+                <input class="forminput" type="number" name="cedula" id="address" class="form-control" placeholder="Cedula">
+                <p>Ruta</p>
+                <input class="forminput" type="text" name="ruta" id="" placeholder="ruta">
+            </div>
+            <input class="gridbutton" type="submit" value="Subir" style="display:grid; grid-template-columns: 20%;justify-content: center">
+        </form>
+    </div>
 </body>
 </html>
