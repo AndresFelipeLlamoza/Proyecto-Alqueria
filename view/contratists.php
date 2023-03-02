@@ -7,6 +7,7 @@ date_default_timezone_set("America/Bogota");
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="/proyectoalqueria/view/css/contratists.css">
     <title>Document</title>
 </head>
@@ -16,14 +17,14 @@ date_default_timezone_set("America/Bogota");
     include ("../model/conection.php")
     ?>
     <div class="navcontainer">
-        <div class="navitems">
-            <a href="index.php" class="active">Home</a>
-            <a href="about.php" class="active">About</a>
-            <a href="contact.php" class="active">Contact</a>
-        </div>
+        <h1>Control Documental Contratistas</h1>
     </div>
     <div class="contratistable">
-        
+    <div class="navitems">
+         <a href="addcontratist.php" title="Ingresar un nuevo documento de contratista" id="add" class="active">Agregar <i class='bx bx-sm bxs-file-plus'></i></a>
+         <a href="contact.php" class="active" title="Registrar un nuevo contratista" class="Active">Nuevo Contratista <i class='bx bx-sm bx-upload'></i></a>
+         
+    </div>
         <br>
         <br>
         <table class="datostabla">
@@ -32,6 +33,7 @@ date_default_timezone_set("America/Bogota");
                 <th>Celular</th>
                 <th>Cedula</th>
                 <th>Ruta</th>
+                <th>Operaciones</th>
             </tr>
             <?php foreach($conex -> query("SELECT * FROM contratistas") as $row){?>
             <tr>
@@ -39,6 +41,10 @@ date_default_timezone_set("America/Bogota");
                 <td><?php echo $row ["Celular"]?></td>
                 <td><?php echo $row ["Cedula"]?></td>
                 <td><?php echo $row ["Ruta"]?></td>
+                <td>
+                    <a href="about.php" class="operation1"><i class='bx bx-sm bx-refresh'></i></a>
+                    <a href="contact.php" class="operation2"> <i class='bx bx-sm bxs-trash'></i></a>
+                </td>
             </tr>
             <?php } ?>
         </table>
