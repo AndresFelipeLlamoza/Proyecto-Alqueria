@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/proyectoalqueria/view/css/newcontrat.css">
-    <title>Document</title>
+    <title>Nuevo contratista</title>
 </head>
 <body>
     <?php 
     include ("/template/sidebar.php")
     ?>
     <div class="navcontainer">
-        <h1>Agregar un nuevo contratista</h1>
+        <h2>Agregar un nuevo contratista</h2>
     </div>
     <div class="formbody">
         <form class="formcontainer" action="/proyectoalqueria/model/newcontrat.php" method="post">

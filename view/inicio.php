@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/proyectoalqueria/view/css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <title>Document</title>
 </head>
 <body>
     <?php 
     date_default_timezone_set("America/Bogota");
-    include ("./model/conection.php")
+    include ("./model/conection.php");
     ?>
     <div class="logincontainer">
         <div>

@@ -9,7 +9,7 @@ date_default_timezone_set("America/Bogota");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="/proyectoalqueria/view/css/contratists.css">
-    <title>Document</title>
+    <title>Contratistas</title>
 </head>
 <body>
     <?php 
@@ -17,7 +17,7 @@ date_default_timezone_set("America/Bogota");
     include ("../model/conection.php")
     ?>
     <div class="navcontainer">
-        <h1>Control Documental Contratistas</h1>
+        <h2>Control Documental Contratistas</h2>
     </div>
     <div class="contratistable">
     <div class="navitems">

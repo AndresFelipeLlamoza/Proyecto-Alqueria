@@ -9,7 +9,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/proyectoalqueria/view/css/sidebar.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Document</title>
+    <title>Portal de operaciones</title>
 </head>
 <body>
    <div class="sidebar">
@@ -25,7 +25,7 @@ session_start();
     <div>
         <ul class="sideitems">
             <li class="link"><a href="#">Bienvenido: <?php echo $_SESSION["usuario"]?> <i class='bx bx-user bx-sm'></i></a></li>
-            <li class="link"><a href="#">Informacion de la cuenta</a></li>
+            <li class="link"><a href="/proyectoalqueria/view/account.php">Informacion de la cuenta</a></li>
             <li class="link"><a href="/proyectoalqueria/model/closesion.php">Cerrar Sesion</a></li>
         </ul>
     </div>
