@@ -1,13 +1,16 @@
+html{
+    width: 100%;
+}
+
 .loginform{
     background-color: rgba(255, 255, 255, 0.801);
     width: 35vh;
-    height: 50vh;
+    height: 100%;
     padding: 45px;
     text-align: justify;
     border-radius: 0px 25px 25px 0px;
     font-size: 18px;
 }
-
 
 body{
     background-image: url(/proyectoalqueria/view/img/backimage.jpg);
@@ -27,6 +30,7 @@ body{
     display:flex;
     justify-content: center;
     padding: 100px;
+
 } 
 
 

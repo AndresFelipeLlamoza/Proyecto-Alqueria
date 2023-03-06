@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/account.css">
     <script src="./js/showforms.js"></script>
+    <script src="/proyectoalqueria/view/js/hidesidebar.js"></script>
     <title>Document</title>
 </head>
 <body>

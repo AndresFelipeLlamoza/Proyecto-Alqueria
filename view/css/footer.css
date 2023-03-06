@@ -9,13 +9,15 @@ a{
 
 footer{
     background-color: rgb(236,27,44);
-    padding: 25px;
     color: #fff;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .footeritems{
     display: flex;
     justify-content: center;
-    gap: 75px;
+    gap: 65px;
     flex-wrap: wrap;
 }

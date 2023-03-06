@@ -10,8 +10,7 @@
 <body>
     <footer>
         <ul class="footeritems">
-            <li><p>Sitio web oficial: <span><a href="https://alqueria.com.co/" target="_blank">Familia alqueria</a></span></p></li>
-            <li>&copy;Regional Occidente<br>Todos los derechos reservados</li>
+            <li>&copy;Regional Occidente | Todos los derechos reservados</li>
         </ul>
     </footer>
 </body>
