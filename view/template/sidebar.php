@@ -19,7 +19,7 @@ session_start();
     </div>
     <div>
         <ul class="sideitems">
-            <center><div class="imgcontain"> <img id="sideimg" src="./img/logo.webp" alt=""><li></li></div></center>
+            <center><div class="imgcontain"> <img id="sideimg" src="./img/iconwrapped.png" alt=""><li></li></div></center>
             <a class="sidelinks" href="/proyectoalqueria/view/contratists.php"><li id="link"><i class='bx bx-group bx-sm'></i> <p id="sidelinktext1"> Contratistas</p></li></a>
             <a class="sidelinks" href="/proyectoalqueria/view/dshb_control.php"><li id="link"><i class='bx bx-paperclip bx-sm'></i><p id="sidelinktext2"> Control Documental</p></li></a>
             <a class="sidelinks" href="#"><li id="link"><i class='bx bxs-t-shirt bx-sm'> </i><p id="sidelinktext3"> Entrega de dotacion</p></li></a>
@@ -30,7 +30,7 @@ session_start();
     <div>
     <hr >
         <ul class="sideitems">
-        <a class="sidelinks" href="#"><li id="link"><i class='bx bx-user bx-sm'></i><p id="sidelinktext5"><h3><?php echo $_SESSION["usuario"]?></h3> </p></li></a>
+        <a class="sidelinks" href="#"><li id="link"><i class='bx bx-user bx-sm'></i><p id="sidelinktext5"><?php echo $_SESSION["usuario"]?></p></li></a>
         <a class="sidelinks"href="/proyectoalqueria/view/account.php"><li id="link"><i class='bx bx-sm bx-info-circle' ></i><p id="sidelinktext6"> Mi cuenta</p></li></a>
         <a class="sidelinks" href="/proyectoalqueria/model/closesion.php"><li id="link"><i class='bx bx-exit bx-sm' ></i><p id="sidelinktext7"> Cerrar Sesion</p></li></a>
         </ul>

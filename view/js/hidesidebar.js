@@ -10,9 +10,13 @@ function hideside(){
     var text7 = document.getElementById("sidelinktext7");
     var wrapper = document.getElementById("cuerpocontainer");
 
-    if(img.style.height = "5vh" && side.style.width == "27vh" && text1.style.display == "block" && text2.style.display == "block" && text3.style.display == "block" && text4.style.display == "block" && text5.style.display == "block" && text6.style.display == "block" && text7.style.display == "block"){
+    if(img.style.height = "5vh" && side.style.width == "27vh"
+     && text1.style.display == "block" && text2.style.display == "block" &&
+      text3.style.display == "block" && text4.style.display == "block" &&
+       text5.style.display == "block" && text6.style.display == "block" &&
+        text7.style.display == "block"){
         side.style.width = "10vh"
-        img.style.height = "3vh"
+        img.style.height = "5vh"
         wrapper.style.marginLeft = "10vh"
         side.style.transition = "all .5s"
         text1.style.display = "none"

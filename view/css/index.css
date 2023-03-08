@@ -1,11 +1,11 @@
 html{
     width: 100%;
+    margin: 0
 }
 
 .loginform{
     background-color: rgba(255, 255, 255, 0.801);
-    width: 35vh;
-    height: 100%;
+    width: 40vh;
     padding: 45px;
     text-align: justify;
     border-radius: 0px 25px 25px 0px;
@@ -29,7 +29,7 @@ body{
 .logincontainer{
     display:flex;
     justify-content: center;
-    padding: 100px;
+    padding: 130px;
 
 } 
 
@@ -69,7 +69,7 @@ body{
 
 
 
-@media screen and (max-width:960px){
+@media screen and (max-width:1014px){
     .loginimage{
         display: none;
     }
@@ -79,5 +79,22 @@ body{
     .logincontainer{
         display: flex;
         justify-content: center;
+    }
+}
+@media screen and(max-height: 1200px){
+    .logincontainer{
+        padding: 250px;;
+    }
+}
+
+@media screen and (max-height:825px){
+    .logincontainer{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-height:760px){
+    .logincontainer{
+        padding: 50px;
     }
 }

@@ -2,6 +2,7 @@ function email(){
     let formemail = document.getElementById('changemail');
     if (formemail.style.display === "none") {
         formemail.style.display = "block";
+        formemail.style.transition = "all .5s"
     }else{
         formemail.style.display = "none";
     }   

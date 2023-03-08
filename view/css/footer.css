@@ -10,9 +10,12 @@ a{
 footer{
     background-color: rgb(236,27,44);
     color: #fff;
-    position:fixed;
-    bottom: 0;
     width: 100%;
+    height: 10vh;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footeritems{

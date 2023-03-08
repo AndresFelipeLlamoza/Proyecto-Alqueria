@@ -15,9 +15,7 @@
 			<li><a href="#"><img class="logo" src="/proyectoalqueria/view/img/logo.webp" alt="" srcset=""></a></li>
 		</ul>
 		<ul id="linkscontainer">
-			<li><a class="link" href="#">Inicio</a></li>
-			<li><a class="link" href="#">Iniciar sesion</a></li>
-			<li><a class="link" href="#">Acerca de</a></li>
+			
 		</ul>
 		<!-- <a href="javascript:void(0)" class="desplegar" onclick="whooper()">
 			<i class='bx bx-md bx-menu bx-flip-horizontal' > </i>
