@@ -13,7 +13,7 @@
     <?php 
     date_default_timezone_set("America/Bogota");
     include ("../model/conection.php");
-    include ("/template/sidebar.php");
+    include ("./template/sidebar.php");
     ?>
     <div id="cuerpocontainer">
         <div class="navcontainer">

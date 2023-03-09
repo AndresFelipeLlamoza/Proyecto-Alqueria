@@ -97,6 +97,7 @@ html{
     font-size: 18px
 }
 
+
 @media screen and(max-width: 904px){
     .row{
         display: flex;

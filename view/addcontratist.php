@@ -10,14 +10,14 @@
 </head>
 <body>
     <?php 
-    include ("/template/sidebar.php")
+    include ("./template/sidebar.php")
     ?>
     <div id="cuerpocontainer">
         <div id="navcontainer">
             <h2>Agregar un nuevo contratista</h2>
         </div>
         <div class="formbody">
-            <form class="formcontainer" action="/proyectoalqueria/model/newcontrat.php" method="post">
+            <form class="formcontainer" enctype="multipart/form-data" action="/proyectoalqueria/model/newcontrat.php" method="post">
                 <div class="rowimg">
                     <div class="column">
                         <center><img class="addimg" src="/proyectoalqueria/view/img/add-group.png" alt="" srcset=""></center>
@@ -42,6 +42,11 @@
                         <p>Ruta <span style="color:red">*</span></p>
                         <input class="forminput" type="text" name="ruta" id="" placeholder="ruta" required>
                     </div>
+                    <div class="column">
+                        <p>Subir una foto de perfil <span style="color:red">*</span></p>
+                        <input class="forminput" type="file" name="perfil" id="" placeholder="Su imagen aqui" required>
+                    </div>
+                    
                 </div>
                 <div class="row">
                     <div class="column">

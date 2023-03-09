@@ -23,7 +23,7 @@ $result = mysqli_query($conex, $query )
 </head>
 <body>
     <?php  
-    include ("/template/sidebar.php")
+    include ("./template/sidebar.php")
     ?>
     <div class="cuerpocontainer">
         <div class="navcontainer">

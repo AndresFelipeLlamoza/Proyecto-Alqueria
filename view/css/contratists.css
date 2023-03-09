@@ -194,11 +194,18 @@ border: solid 1px;
     background-color: rgba(196, 196, 196, 0.733);
 }
 
+.tablecontainer{
+    width: auto;
+    overflow-x: scroll;
+}
 
+/* .tablecontainer::-webkit-scrollbar{
+    display: none;
+} */
 
-@media screen and(max-width:855px){
+@media screen and(max-width:836px){
     .tablecontainer{
-        overflow: scroll ;
-        width: 700%;
+       width: auto;
+       overflow: scroll;
     }
 }
