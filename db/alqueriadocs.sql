@@ -23,20 +23,15 @@ CREATE TABLE IF NOT EXISTS `contratistas` (
   `Cedula` bigint(20) DEFAULT NULL,
   `Ruta` varchar(500) DEFAULT NULL,
   `Perfil` longblob,
+  `Estado` varchar(50) DEFAULT 'Activo',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
--- Volcando datos para la tabla alqueriadocs.contratistas: 8 rows
+-- Volcando datos para la tabla alqueriadocs.contratistas: 2 rows
 /*!40000 ALTER TABLE `contratistas` DISABLE KEYS */;
-INSERT INTO `contratistas` (`id`, `Nombre`, `Celular`, `Cedula`, `Ruta`, `Perfil`) VALUES
-	(5, 'Elizabeth Cortes Londoño', 3182617804, 25173447, 'P0100', NULL),
-	(6, 'Jhon Anderson Riascos Marmolejo', 3183606307, 14678147, 'P0101', NULL),
-	(7, 'Leonardo Lopez Vargas', 3174524042, 12239000, 'P0102', NULL),
-	(8, 'Liliana Mayorquin Guzman', 3183802220, 31167781, 'P0104', NULL),
-	(9, 'Luz Mery Buitrago Tumbo', 3102529809, 40784466, 'P0229', NULL),
-	(10, 'Zoila Rosa Parra Moreno', 3152623846, 29657155, 'P0228', NULL),
-	(16, 'Andres Felipe Llamosa Pechene', 3154281811, 1113978483, 'P0204', NULL),
-	(18, 'Yurany Liceth MontaÃ±o ', 3103626720, 1113636661, 'YUMBO', NULL);
+INSERT INTO `contratistas` (`id`, `Nombre`, `Celular`, `Cedula`, `Ruta`, `Perfil`, `Estado`) VALUES
+	(1, 'Andres Felipe Llamosa Pechene', 3154281811, 1113978483, 'CROSSPAL', _binary 0x433A55736572736569626172726167417070446174614C6F63616C54656D70706870374645362E746D70, 'Activo'),
+	(2, 'Zoila Rosa Parra Moreno', 12389128703, 321049219042301, 'P0230', _binary 0x32303232303732385F3131313431322E6A7067, 'Activo');
 /*!40000 ALTER TABLE `contratistas` ENABLE KEYS */;
 
 -- Volcando estructura para tabla alqueriadocs.especialistas
