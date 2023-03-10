@@ -45,7 +45,7 @@ date_default_timezone_set("America/Bogota");
                         <td><?php echo $row ["Celular"]?></td>
                         <td><?php echo $row ["Cedula"]?></td>
                         <td><?php echo $row ["Ruta"]?></td>
-                        <td><img src="data:image/jpg;base64, <?php echo base64_decode($row['Perfil']); ?>" alt="" srcset=""/></td>
+                        <td><img src="image/jpg;charset=utf8;base64, <?php echo base64_decode($row['Perfil']); ?>" alt="" srcset=""/></td>
                         <td class="operacont">
                             <a href="../view/updtcontratist.php?id=<?php echo $row["id"]?>&nombre=<?php echo $row["Nombre"]?>"class="operation1"><i class='bx bx-sm bx-refresh'></i></button>
                             <a href="#" class="operation2" > <i class='bx bx-sm bxs-trash'></i></a>

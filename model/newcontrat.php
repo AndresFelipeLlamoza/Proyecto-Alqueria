@@ -7,6 +7,7 @@ $celular = $_POST["celular"];
 $cedula = $_POST["cedula"];
 $ruta = $_POST["ruta"];
 $perfil = $_FILES["perfil"]['name'];
+$tempname = $_FILES["tempname"]['name'];
 
 $insert = "INSERT INTO contratistas (Nombre,Celular,Cedula,Ruta,Perfil) VALUES ('$nombre','$celular','$cedula','$ruta', '$perfil')";
 $result = mysqli_query($conex, $insert);
