@@ -104,9 +104,14 @@ li > a {
     transform: scale(1.1);
     color: black;
 }
+@media screen and(max-height:800px){
+    .sideitems{
+        gap: 0px
+    }
+}
 
 @media screen and(max-width:750px){
     #sidebar{
-        width:10vh;
+        width:100vh;
     }
 }

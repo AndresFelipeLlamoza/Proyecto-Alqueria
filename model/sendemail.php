@@ -1,19 +1,10 @@
 <?php 
 
-$correo = $_POST['correo'];
+$destino = $_POST["correo"];
+$nombre = $_POST["nombre"];
+$mensaje = "Envio de mensaje de prueba de la funcion mail con php";
 
-$to = $correo;
-$subject = "Mensaje";
-$message = "This is a notification email from PHP. Enjoy ";
-$headers = "From: llamozafelipe@gmail.com\r\n" .
-           "Reply-To: llamozafelipe@gmail.com \r\n" .
-           "X-Mailer: PHP/" . phpversion();
-
-if (mail($to, $subject, $message, $headers)) {
-    echo "Notification email sent successfully.";
-} else {
-    echo "Failed to send notification email.";
-}
-
-
+$contenido = "Nombre: " . $nombre . "\nCorreo: " .$correo. "\nMensaje: " .$mensaje;
+mail($destino, "Contacto", $contenido);
+header ("Location: ../view/account.php")
 ?>

@@ -75,10 +75,13 @@
             <div class="sendemail">
                 <form action="/proyectoalqueria/model/sendemail.php" method="post">
                     <center><i class='bx bxs-file-find bx-border bx-lg' ></i></center>
-                    <p>Enviar mensaje a un correo electronico</p>
-                    <input class="inputmod" type="email" name="correo" id=""></input>
+                    <p>Nombre</p>
+                    <input class="inputmod" type="text" name="nombre" id="" required>
                     <br><br>
-                    <center><input class="updatesubmit" type="submit" value="Enviar mensaje"></center>
+                    <p>Correo Electronico</p>
+                    <input class="inputmod" type="email" name="correo" id="" required></input>
+                    <br><br>
+                    <center><input class="updatesubmit" type="submit" value="Enviar mensaje"  ></center>
                 </form>
             </div>
         </div>

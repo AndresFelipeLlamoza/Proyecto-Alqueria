@@ -6,10 +6,9 @@ $nombre = $_POST["nombre"];
 $celular = $_POST["celular"];
 $cedula = $_POST["cedula"];
 $ruta = $_POST["ruta"];
-$perfil = $_FILES["perfil"]['name'];
-$tempname = $_FILES["tempname"]['name'];
+$perfil = addSlashes(file_get_contents($_FILES["perfil"]['tmp_name']));
 
-$insert = "INSERT INTO contratistas (Nombre,Celular,Cedula,Ruta,Perfil) VALUES ('$nombre','$celular','$cedula','$ruta', '$perfil')";
+$insert = "INSERT INTO contratistas (Nombre,Celular,Cedula,Ruta,Perfil) VALUES ('$nombre','$celular','$cedula','$ruta','$perfil')";
 $result = mysqli_query($conex, $insert);
 
 if(isset($result)){

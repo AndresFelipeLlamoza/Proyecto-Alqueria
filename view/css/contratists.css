@@ -22,7 +22,7 @@ table{
 
 .datostabla, th, td{
     border: 1px solid black;
-    padding: 20px;
+    padding: 10px;
     border-collapse: collapse;
 }
 #cuerpocontainer{
@@ -154,7 +154,8 @@ border: solid 1px;
     gap: 10px;
     flex-wrap: wrap;
     border: none;
-    border-bottom: 1px solid 
+    border-bottom: 1px solid ;
+    padding: 50px
 }
 
 .operation2{
@@ -192,6 +193,12 @@ border: solid 1px;
     transition: all ease .5s;
     font-size: 18px;
     background-color: rgba(196, 196, 196, 0.733);
+}
+
+.perfilimg{
+    width: 50%;
+    height: 15vh;
+    border-radius: 150%;
 }
 
 .tablecontainer{
