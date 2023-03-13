@@ -194,10 +194,12 @@ border: solid 1px;
     font-size: 18px;
     background-color: rgba(196, 196, 196, 0.733);
 }
-
+.contdataimg{
+    padding: 20px;
+}
 .perfilimg{
-    width: 50%;
-    height: 15vh;
+    width: 10vh;
+    height: 10vh;
     border-radius: 150%;
 }
 

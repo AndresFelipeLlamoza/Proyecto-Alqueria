@@ -10,7 +10,13 @@
 </head>
 <body>
     <?php 
-    include ("./template/sidebar.php")
+    include ("./template/sidebar.php");
+
+    if(!isset($_SESSION['usuario'])){
+        echo '<script>alert("Debes iniciar sesion en la pagina web");window.location="/proyectoalqueria"</script>';
+    }
+    error_reporting(0)
+
     ?>
     <div id="cuerpocontainer">
         <div id="navcontainer">
@@ -44,7 +50,16 @@
                     </div>
                     <div class="column">
                         <p>Subir una foto de perfil <span style="color:red">*</span></p>
-                        <input class="forminput" type="file" name="perfil" id="" placeholder="Su imagen aqui" required>
+                        <input class="forminput" type="file" onchange="preview()" name="perfil" id="" placeholder="Su imagen aqui" >
+                    </div>
+                    <div class="column" >
+                        <p>Vista Previa</p>
+                        <img style="border: solid 1px black;" src="" id="thumb" width="150px" alt="">
+                        <script>
+                            function preview(){
+                                thumb.src = URL.createObjectURL(event.target.files[0]);
+                            }
+                        </script>
                     </div>
                     
                 </div>

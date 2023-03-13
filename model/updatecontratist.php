@@ -1,23 +1,20 @@
 <?php
 date_default_timezone_set("America/Bogota");
 include ("conection.php");
-
+$id = $_POST['id'];
 $Nombre = $_POST['nombre'];
 $Celular = $_POST['celular'];
 $Cedula = $_POST['cedula'];
 $Ruta = $_POST['ruta'];
-$Perfil = $_POST['perfil'];
-$filesdata = file_get_contents($_FILES['perfil']['tmp_name']);
-move_uploaded_file($_FILES['image']['tmp_name'], "/proyectoalqueria/view/img/" ."perfil");
+$Imagen = file_get_contents($_FILES['Imagen']['tmp_name']);
 
-
-$update = "UPDATE contratistas SET nombre='$Nombre, celular='$Celular, cedula='$Cedula, ruta='$Ruta', perfil='$filesdata'";
+$update = "UPDATE contratistas SET nombre='$Nombre' AND celular='$Celular' AND cedula='$Cedula' AND ruta='$Ruta' AND perfil='$Imagen' WHERE id='$id'";
 $result = mysqli_query($conex, $update);
 
 if (isset($result)){
-    echo "Bien";
+    echo "<script>alert('Datos del contratista actualizados con exito'); window.location='../view/contratists.php'</script>";
 }else{
-    echo "FATAL ERROR";
+    echo "<script>alert('Error al crear al contratista'); window.history.go(-1)</script>";
 }
 
 ?>

@@ -2,6 +2,11 @@
 
 date_default_timezone_set("America/Bogota");
 include ("../model/conection.php");
+session_start();
+if(!isset($_SESSION['usuario'])){
+    echo '<script>alert("Debes iniciar sesion en la pagina web");window.location="/proyectoalqueria"</script>';
+}
+error_reporting(0);
 
 $id = $_GET["id"];
 $query = "SELECT * FROM contratistas WHERE id = '$id'";
@@ -62,7 +67,16 @@ $result = mysqli_query($conex, $query )
                     <div class="row">
                         <div class="column">
                             <p>Foto de perfil (Opcional)</p>
-                            <input type="file" name="perfil" id="">
+                            <input type="file" onchange="preview()"name="Imagen" id="">
+                            <script>
+                                function preview() {
+                                 thumb.src = URL.createObjectURL(event.target.files[0]);   
+                                }
+                            </script>
+                        </div>
+                        <div class="column">
+                            <p>Imagen</p>
+                            <center><img width="150px" id="thumb" src="data:image/jpg;base64, <?php echo base64_encode($row ["Perfil"]) ?>" alt="" srcset=""></center>
                         </div>
                     </div>
                     <br>
