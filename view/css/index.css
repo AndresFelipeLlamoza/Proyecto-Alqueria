@@ -1,0 +1,108 @@
+html{
+    width: 100%;
+    margin: 0
+}
+
+.loginform{
+    background-color: rgba(255, 255, 255, 0.801);
+    width: 40vh;
+    padding: 45px;
+    text-align: justify;
+    border-radius: 0px 25px 25px 0px;
+    font-size: 18px;
+}
+
+body{
+    background-image: url(../img/backimage.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
+    padding:0;
+    margin:0;
+}
+
+.iconsign{
+    width: 150px;
+    justify-items: center;
+}
+
+.logincontainer{
+    display:flex;
+    justify-content: center;
+    padding: 130px;
+
+} 
+
+
+.loginimage{
+    width: 55vh;
+    height: 100%;
+    border-radius: 25px 0px 0px 25px;
+}
+
+.usrinput{
+    background-color: transparent ;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    width: 100%;
+    height: 25px;
+    font-size: 18px;
+}
+
+.buttonsign{
+    padding: 10px;
+    width: 150px;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: transparent;
+    transition: all ease .5s;
+    border: 1px solid
+}
+
+.buttonsign:hover{
+    background-color: rgb(255, 44, 44);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:1014px){
+    .loginimage{
+        display: none;
+    }
+    .loginform{
+        border-radius: 25px ;
+    }
+    .logincontainer{
+        display: flex;
+        justify-content: center;
+    }
+}
+/* @media screen and (max-height: 1200px){
+    .logincontainer{
+        padding: 80px;
+    }
+} */
+
+@media screen and (max-height:900px){
+    .logincontainer{
+        padding: 100px;
+    }
+}
+
+@media screen and (max-height:793px){
+    .logincontainer{
+        padding: 40px;
+    }
+}
+@media screen and (max-width:720px){
+    .logincontainer{
+        padding-bottom: 40px;
+    }
+}
+@media screen and (max-width: 480px){
+    .loginform{
+        width: 40vh
+    }
+}

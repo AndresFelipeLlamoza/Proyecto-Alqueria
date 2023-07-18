@@ -1,0 +1,357 @@
+body{
+    background-image: url(../img/backimage.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
+    padding:0;
+    margin:0;
+}
+
+.contratistable{
+    padding: 35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*SPINER DE CARGA*/
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid rgba(255,20,43,255);
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 1s linear infinite;
+  }
+  
+
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  #myDiv {
+    display: none;
+    text-align: center;
+  }
+
+#cuerpocontainer{
+    margin-left: 10vh;
+}
+#overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    display: none;
+    transition: all ease .5s infinite;
+}
+#sidelinktext{
+    display: none;
+}
+
+.routercontainer{
+    background-color:#ffffffc0;
+    padding: 35px;
+}
+.tablecontainer{
+    background-color:#fff;
+    padding: 20px;
+    border-radius: 10px
+}
+
+.navcontainer {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(214, 26, 42);
+    align-items: center;
+    width: auto;
+    padding: 30px;
+    gap: 75px;
+    color: rgb(255, 255, 255) !important;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.row{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 15px;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    flex:content;
+    padding: 20px;
+}
+
+#close{
+    background-color: transparent;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: all .5s;
+    left: 85%;
+    border: none
+}
+
+#close:hover{
+    color: white;
+    cursor: pointer;
+    background-color: rgb(255, 49, 49);
+}
+
+.filteritems{
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.contratroute{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.contratcontain{
+    background-color: white;
+    padding: 35px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.routeselect{
+    background-color: white;
+    width: 200px;
+    color: black;
+}
+/* .cardsroutes{
+    background-color: rgb(224, 224, 224);
+    padding: 25px;
+    text-align: center;
+    width: 30vh;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease .5s;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} */
+.modalruta{
+    background-color: rgb(224, 224, 224);
+    padding: 25px;
+    text-align: center;
+    width: 30vh;
+    border-radius: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    transition: all ease .5s;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.modalruta:hover{
+    transform: scale(1.1);
+}
+.cardimg{
+    width: 15vh;
+    height: 15vh;
+}
+.butonupdt{
+    border-radius: 15px;
+    background-color: transparent;
+    transition: all .5s;
+    padding: 4px;
+    border: solid 1px;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 999;
+    display: none;
+  }
+  
+  .modalcontainer {
+    position: fixed;
+    overflow: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    z-index: 1000;
+    display: none;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+  
+.butonupdt:hover{
+    cursor: pointer;
+    background-color: rgb(91, 204, 91);
+    color: white
+}
+.input-field{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%
+}
+.navitems{
+    display: flex;
+    gap: 25px
+}
+
+.active:hover {
+    background-color: rgb(247, 53, 39);
+    transform: scale(1.1);
+    color: white;
+    transition: all .5s;
+}
+
+.operations:hover{
+    background-color: rgb(247, 53, 39);
+    transform: scale(1.1);
+    color: white;
+    transition: all .5s;
+}
+
+.operation1{
+    text-decoration: none;
+    color: rgb(66, 247, 105);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 15px;
+    border: 1px solid;
+    padding: 8px;
+    text-align: center;
+    transition: all ease .5s;
+    font-size: 16px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+.operacont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.operation2{
+    text-decoration: none;
+    color: rgb(247, 66, 66);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 15px;
+    border: 1px solid;
+    padding: 10px;
+    text-align: center;
+    transition: all ease .5s;
+    font-size: 16px;
+    background-color: #fff
+}
+
+.operation1:hover{
+    transform: scale(1.1);
+    background-color: rgb(66, 247, 105);
+    color: white;
+}
+
+.operation2:hover{
+    transform: scale(1.1);
+    background-color: rgb(247, 66, 66);
+    color: white;
+}
+.active{
+    text-decoration: none;
+    color: rgb(255, 246, 246);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: solid 1px black;
+    border-radius: 15px;
+    padding: 8px;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all ease .5s;
+    font-size: 18px;
+    background-color: rgba(196, 196, 196, 0.733);
+}
+.contdataimg{
+    padding: 20px;
+}
+.perfilimg{
+    width: 10vh;
+    height: 10vh;
+    border-radius: 150%;
+}
+
+.tablecontainer{
+    width: auto;
+    overflow-x: scroll;
+}
+
+@media screen and (max-width:491px){
+    .contratistable{
+        padding:0px;
+    }
+    .contratcontain, .filteritems{
+        border-radius: 0px
+    }
+}
+/* .tablecontainer::-webkit-scrollbar{
+    display: none;
+} */
+
+/* @media screen and(max-width:836px){
+    .tablecontainer{
+       width: auto;
+       overflow: scroll;
+    }
+} */

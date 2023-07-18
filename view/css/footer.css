@@ -1,0 +1,27 @@
+li{
+    text-align: center;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+footer{
+    background-color: rgb(236,27,44);
+    color: #fff;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+.footeritems{
+    display: flex;
+    justify-content: center;
+    gap: 65px;
+    flex-wrap: wrap;
+}

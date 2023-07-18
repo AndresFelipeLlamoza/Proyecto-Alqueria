@@ -1,0 +1,131 @@
+#cuerpocontainer{
+    margin-left: 10vh;
+}
+
+#overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    display: none;
+    transition: all ease .5s infinite;
+}
+
+#myChart1, #myChart2, #myChart3{
+    background-color: white;
+    width: 50vh;
+    height: 50vh;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+    padding: 20px;
+}
+body{
+    background-image: url(../img/backimage.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
+    padding:0;
+    margin:0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container-complimentchart{
+    width: 100%
+}   
+.accompliment-percentage{
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    border-radius: 0px 0px 25px 25px;
+}
+#dataContratorSelector{
+    border-color: red;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+    width: 100%;
+}
+.combobox-list{
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px
+}
+.combobox_list{
+    background-color: white;
+    border-radius: 25px 25px 0px 0px;
+    padding: 25px 25px 0px 0px;
+    padding: 20px
+}
+
+.navcontainer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(214, 26, 42);
+    align-items: center;
+    width: auto;
+    padding: 30px;
+    gap: 75px;
+    color: rgb(255, 255, 255) !important;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.colbar{
+    background-color: rgb(214, 26, 42);;
+    height: 100%;
+    width: 2vh;
+    color:rgb(214, 26, 42)
+}
+.colcont{
+    padding: 10px
+}
+.progresscontainer{
+    background-color: rgba(240, 248, 255, 0.788);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 25px;
+    padding-bottom: 25px;
+}
+
+.progresscharts{
+    background-color: rgba(240, 248, 255, 0.788);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 25px;
+    justify-content: space-around;
+}
+
+.dashconts{
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+    transition: all ease .5s;
+}
+
+.dashconts:hover{
+    transform: scale(1.1);
+    
+}
+
+.countext{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+@media screen and (max-width: 590px){
+    .progresscharts{
+        display:block;
+    }
+}
