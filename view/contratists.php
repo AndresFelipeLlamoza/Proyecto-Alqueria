@@ -43,7 +43,7 @@
         <div class="navcontainer">
             <h2>Contratistas</h2>
             <?php 
-            include ('./template/bellnotification.php');
+            // include ('./template/bellnotification.php');
             ?>
         </div>
         <div class="contratcardbody" id="contenedor" style="display: none">

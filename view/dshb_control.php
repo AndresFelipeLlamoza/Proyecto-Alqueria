@@ -53,7 +53,9 @@ error_reporting(0);
         <div id="cuerpocontainer" >
             <div class="navcontainer">
                 <h2>Control Documental</h2>
-                <?php include ("./template/bellnotification.php")?>
+                <?php
+                 // include ("./template/bellnotification.php")
+                ?>
             </div>
             <div class="contratistable" style="display: none;" id="dshbcontainer">
             <div class="filteritems">

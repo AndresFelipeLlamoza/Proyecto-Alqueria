@@ -30,7 +30,7 @@
             </script>
             <h2>Informacion de la cuenta</h2>
             <?php 
-            include('./template/bellnotification.php');
+            // include('./template/bellnotification.php');
             ?>
         </div>
         <div class="accountcontainer" id="containerinfo" style="display: none">

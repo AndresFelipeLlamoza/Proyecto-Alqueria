@@ -13,7 +13,7 @@ $id = $_GET['id'];
 $Nombre = $_GET['Nombre'];
 $selcontrat = "SELECT * FROM contratistas WHERE id = '$id'";
 $fecha_actual = time();
-$seldoc = "SELECT Contenido_doc FROM documentos WHERE id_documentos = '$id'";
+$seldoc = "SELECT Contenido_doc FROM documentos WHERE id_documento = '$id'";
 $exec = mysqli_query($conex, $seldoc);
 ?>
 <!DOCTYPE html>

@@ -55,7 +55,7 @@ error_reporting(0);
             <div class="navcontainer">
                 <h2>Contratistas con documentos por renovar</h2>
                 <?php 
-            include('./template/bellnotification.php');
+           // include('./template/bellnotification.php');
             ?>
             </div>
             <div class="contratistable" style="display: none;" id="dshbcontainer">

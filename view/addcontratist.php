@@ -28,7 +28,7 @@ session_start();
         <div id="navcontainer">
             <h2>Agregar un nuevo contratista</h2>
             <?php 
-            include('./template/bellnotification.php');
+            // include('./template/bellnotification.php');
             ?>
         </div>
         <div class="formbody">

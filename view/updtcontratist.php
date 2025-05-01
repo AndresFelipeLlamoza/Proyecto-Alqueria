@@ -37,7 +37,7 @@ $result = mysqli_query($conex, $query )
         <div class="navcontainer">
             <h2>Actualizar Contratista</h2>
             <?php 
-            include('./template/bellnotification.php');
+           // include('./template/bellnotification.php');
             ?>
         </div>
         

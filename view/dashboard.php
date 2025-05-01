@@ -87,7 +87,7 @@ error_reporting(0);
         <div class="navcontainer">
             <h2>Indicadores de progreso - control documental</h2>
             <?php 
-            include('./template/bellnotification.php');
+            // include('./template/bellnotification.php');
             ?>
         </div>
         <div class="progresscontainer">
